@@ -1,0 +1,49 @@
+﻿@model AccountsLoginVM
+
+@{
+    ViewBag.Title = "Login";
+    ViewData["Title"] = "Login";
+}
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<div class="rounded container main" style="background-color: white; padding-bottom: 90px; background-color: rgb(255, 255, 255, 0.3)">
+    <div class="container-fluid align-self-center">
+        <div class="row justify-content-center align-self-center">
+            <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3 h-100">
+
+                <br />
+                <br />
+                <br />
+
+                <form asp-action="Login">
+                    <div asp-validation-summary="ModelOnly" class="form-text text-danger"></div>
+                    <div class="form-group" style="color: navy;">
+                        <label asp-for="Username" class="control-label"></label>
+                        <input asp-for="Username" class="form-control" />
+                        <span asp-validation-for="Username" class="form-text text-danger"></span>
+
+                    </div>
+                    <div class="form-group" style="color: navy;">
+                        <label asp-for="Password" class="control-label"></label>
+                        <input asp-for="Password" class="form-control" />
+                        <span asp-validation-for="Password" class="form-text text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Log in" class="btn btn-info btn-lg btn-block" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    @*@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |*@
+    <br />
+    <center>
+        <a asp-action="Index">Back to Index</a>
+    </center>
+</div>

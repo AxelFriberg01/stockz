@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Typescript";
+}
+
+@section styles{
+    <link href="~/css/TypeScript.css" rel="stylesheet" />
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="scripts/app.js"></script>
+    <title></title>
+</head>
+<body>
+    <br />
+    <br />
+    <div id="message"></div>
+    <div>
+        Compiler: <input id="compiler" value="TypeScript" onkeyup="document.getElementById('message').innerText = sayHello()" /><br />
+        Framework: <input id="framework" value="ASP.NET" onkeyup="document.getElementById('message').innerText = sayHello()" />
+    </div>
+    <br />
+    <a asp-action="Index">Back to Index</a>
+</body>
+</html>

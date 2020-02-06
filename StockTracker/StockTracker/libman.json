@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "twitter-bootstrap@4.4.1",
+      "destination": "wwwroot/bootstrap/",
+      "files": [
+        "js/bootstrap.js",
+        "css/bootstrap.css",
+        "css/bootstrap-grid.css",
+        "css/bootstrap-reboot.css"
+      ]
+    }
+  ]
+}
