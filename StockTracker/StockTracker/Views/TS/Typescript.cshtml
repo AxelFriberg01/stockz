@@ -1,6 +1,6 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Typescript";
+    Layout = "~/Views/Shared/_LayoutTypeScript.cshtml";
 }
 
 @section styles{
@@ -23,6 +23,6 @@
         Framework: <input id="framework" value="ASP.NET" onkeyup="document.getElementById('message').innerText = sayHello()" />
     </div>
     <br />
-    <a asp-action="Index">Back to Index</a>
+        <a asp-controller="Accounts" asp-action="Index">Back to Index</a>
 </body>
 </html>

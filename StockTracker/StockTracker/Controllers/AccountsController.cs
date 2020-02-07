@@ -44,11 +44,5 @@ namespace StockTracker.Controllers
         //    return View();
         //}
 
-        [HttpGet]
-        [Route("/typescript")]
-        public IActionResult Typescript()
-        {
-            return View();
-        }
     }
 }
